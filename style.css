@@ -170,3 +170,57 @@ header > nav .form_container {
   background-color: inherit;
   box-sizing: border-box;
 }
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* hero section */
+.hero_section {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  background-image: url('./images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.black_friday {
+  width: 90%;
+  max-width: 440px;
+  padding: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: var(--black);
+}
+
+@media (min-width: 850px) {
+  .black_friday {
+    top: 64px;
+    left: 72px;
+    transform: none;
+  }
+}
+
+.black_friday > h2 {
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.black_friday > p {
+  font-size: 1rem;
+  letter-spacing: normal;
+}
