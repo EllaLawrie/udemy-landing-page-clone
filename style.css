@@ -730,3 +730,209 @@ section {
     max-width: 115px;
   }
 }
+
+.udemy_business {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+@media (min-width: 850px) {
+  .udemy_business {
+    padding: 8rem 0;
+  }
+}
+
+.udemy_business > .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.upskill_box {
+  width: 100%;
+  max-width: 896px;
+  margin: 0 auto clamp(2.5rem, 7vw, 5rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 850px) {
+  .upskill_box {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row;
+    gap: 0rem;
+  }
+}
+
+.upskill_box > .texts {
+  width: 100%;
+  max-width: 400px;
+  /* margin-bottom: 4rem; */
+  /* border: 1px solid black; */
+}
+
+.upskill_box .texts figure {
+  max-width: 300px;
+  max-height: 51px;
+  margin-bottom: 1rem;
+}
+
+.upskill_box .texts figure img {
+  width: 80%;
+  height: 80%;
+}
+
+.upskill_box .texts h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.25rem;
+}
+
+.upskill_box .texts ul {
+  list-style-position: outside;
+  list-style-type: disc;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+
+.upskill_box .texts ul li {
+  font-size: clamp(1rem, 2.5vw, 1.19rem);
+  line-height: 1.66rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.upskill_btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-flow: column;
+  margin-top: 2rem;
+}
+
+.upskill_btns button:first-of-type {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--black);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+}
+
+.upskill_btns button:last-of-type {
+  width: 100%;
+  height: 3rem;
+  background-color: #ffffff;
+  color: var(--black);
+  border: 1px solid var(--black);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (min-width: 850px) {
+  .upskill_btns {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    gap: 1rem;
+    flex-flow: row;
+  }
+
+  .upskill_btns button:first-of-type {
+    width: 177px;
+    height: 3rem;
+  }
+
+  .upskill_btns button:last-of-type {
+    width: 109px;
+    height: 3rem;
+  }
+}
+
+.upskill_box > figure {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.upskill_box > figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.instructor_box {
+  width: 100%;
+  max-width: 896px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 850px) {
+  .instructor_box {
+    justify-content: space-between;
+    flex-flow: row;
+    gap: 0rem;
+  }
+}
+
+.instructor_box > .texts {
+  width: 100%;
+  max-width: 400px;
+  /* margin-bottom: 4rem; */
+  /* border: 1px solid black; */
+}
+
+.instructor_box .texts h2 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.instructor_box .texts p {
+  text-align: center;
+  font-size: clamp(0.8rem, 2.5vw, 1.19rem);
+  letter-spacing: -0.5px;
+  margin-bottom: 1.25rem;
+}
+
+.instructor_box .texts button {
+  width: 100%;
+  height: 3rem;
+  padding: 0 12px;
+  background-color: var(--black);
+  border: none;
+  color: #ffffff;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+@media (min-width: 850px) {
+  .instructor_box .texts h2 {
+    text-align: left;
+  }
+  .instructor_box .texts p {
+    text-align: left;
+  }
+  .instructor_box .texts button {
+    width: 50%;
+  }
+}
+
+.instructor_box > figure {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.instructor_box > figure img {
+  width: 100%;
+  height: 100%;
+}
