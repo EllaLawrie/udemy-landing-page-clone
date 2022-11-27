@@ -225,6 +225,8 @@ section {
   letter-spacing: normal;
 }
 
+/* broad-selection section */
+
 .broad_selection {
   padding: 3rem 1.5rem 1.5rem;
   max-width: 1292px;
@@ -405,4 +407,94 @@ section {
   font-size: 0.8rem;
   background-color: #eceb98;
   color: #3d3c0a;
+}
+
+/* udemy-merits section */
+.udemy_merits {
+  width: 100%;
+  background-color: var(--color-100);
+  margin: 4rem 0;
+}
+
+.udemy_merits .container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.56rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-flow: column;
+}
+
+@media (min-width: 850px) {
+  .udemy_merits .container {
+    justify-content: space-between;
+    flex-flow: row;
+    gap: 0;
+  }
+}
+
+.merit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.merit span {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merit p {
+  max-width: 18rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* students view */
+
+.students_view {
+  max-width: 1292px;
+  min-height: 400px;
+  padding: 0 1.5rem;
+}
+
+.students_view > h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
+.students_course_list {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.students_course_list::-webkit-scrollbar {
+  height: 4px;
+  background-color: var(--color-100);
+}
+
+.students_course_list::-webkit-scrollbar-thumb {
+  background-color: var(--color-200);
+  width: 10px;
+}
+
+.students_course_list .course_card {
+  width: 245px;
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
 }
